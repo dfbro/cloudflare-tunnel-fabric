@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "tunneled",
 	"version": "${version}",
-	"name": "Cloudflare Tunnel Mod",
+	"name": "Cloudflare Tunnel Mod For Fabric Servers",
 	"description": "Runs Cloudflared automatically on Fabric servers",
 	"authors": [
 		"Me!"
