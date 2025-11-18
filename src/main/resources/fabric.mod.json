@@ -1,41 +1,23 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "tunneled",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Cloudflare Tunnel Mod",
+	"description": "Runs Cloudflared automatically on Fabric servers",
 	"authors": [
 		"Me!"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
-	"environment": "*",
+	"license": "Apache-2.0",
+	"icon": "assets/tunneled/icon.png",
+	"environment": "server",
 	"entrypoints": {
-		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.ExampleModClient"
+		"server": [
+			"com.mikir.tunneled.CloudflaredMod"
 		]
 	},
-	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
 		"fabricloader": ">=0.17.3",
-		"minecraft": "~1.21.10",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"minecraft": "1.21.x",
+		"java": ">=21"
 	}
 }
